@@ -1,9 +1,10 @@
 # Development
 
 ### Link to Deployed Website
-If you used the stencil code, this is `https://<your GitHub username>.github.io/<name of your repository>`
+https://brilliantlion007.github.io/fastfash/
 
 ### Goal and Value of the Application
+A web store for buying clothes
 
 ### Usability Principles Considered
 
