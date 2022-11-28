@@ -1,7 +1,7 @@
 // TODO: create a component that displays a single clothing item
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function FoodItem(props) {
+function ClothingItem(props) {
     return (
         <div class="card" style={{ width: "18rem", marginRight: "15px" }}>
             <div class="card-header bg-transparent">{props.item.filter}</div>
@@ -22,4 +22,4 @@ function FoodItem(props) {
 
     );
 }
-export default FoodItem;
+export default ClothingItem;
