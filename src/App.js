@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useState } from "react";
 import inventory from "./assets/item-data.json";
-import ClothingItem from "./components/ClothingItem";
+import FoodItem from "./components/FoodItem";
 
 
 function App() {
@@ -132,7 +132,7 @@ function App() {
               <div class="card-group" style={{ display: 'flex', flexDirection: 'row' }}>
                 {/* map bakeryData to BakeryItem components */}
                 {iventoryItems.map((item, index) => (
-                  <p><ClothingItem item={item} addToCart={addToCart} /></p>
+                  <p><FoodItem item={item} addToCart={addToCart} /></p>
                 ))}
               </div>
             </div>
