@@ -39,14 +39,14 @@ function App() {
   }
 
   function remove4rmCart(name) {
-    setCartItems(cartItems.filter(item => item.name !== name))
+    setCartItems(cartItems.filter(item => item.name == name))
   }
 
   function filterInventory(param) {
     if (param == "all") {
       setIventoryItems(inventory)
     } else {
-      setIventoryItems(inventory.filter(item => item.filter !== param))
+      setIventoryItems(inventory.filter(item => item.filter == param))
     }
   }
 
@@ -105,7 +105,7 @@ function App() {
               </div>
               <div class="col-3">
                 <button type="button" class="btn btn-labeled btn-outline-dark" onClick={() => { sortCheapLast() }}> <span class="btn-label"><i class="bi bi-sort-down"></i></span> Highest First</button>
-                <button type="button" class="btn btn-labeled btn-outline-dark" onClick={() => { sortCheapFirst() }} style={{marginLeft: '5%' }}> <span class="btn-label"><i class="bi bi-sort-up"></i></span> Lowest First</button>
+                <button type="button" class="btn btn-labeled btn-outline-dark" onClick={() => { sortCheapFirst() }} style={{marginLeft: '5%' }}> <span class="btn-label"><i class="bi bi-sort-down-alt"></i></span> Lowest First</button>
               </div>
             </div>
 
@@ -119,10 +119,10 @@ function App() {
                   <a class="nav-link link-dark" aria-current="page" href="#" onClick={() => { filterInventory("all") }}>All</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link px-5 link-dark" href="#" onClick={() => { filterInventory("Gluten") }}>Gluten Free</a>
+                  <a class="nav-link px-5 link-dark" href="#" onClick={() => { filterInventory("Gluten") }}>Gluten Products</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link px-5 link-dark" href="#" onClick={() => { filterInventory("Dairy") }}>Dairy Free</a>
+                  <a class="nav-link px-5 link-dark" href="#" onClick={() => { filterInventory("Dairy") }}>Dairy Products</a>
                 </li>
               </ul>
             </div>
