@@ -139,7 +139,7 @@ function App() {
           </div>
 
           {/* side bar cart */}
-          <div class="col-3 d-none d-lg-block">
+          <div class="col-3">
 
             <div class="d-flex flex-column flex-shrink-0 p-3 text-white sidebar">
               <h1 class="fs-4 text-white mb-0" style={{
